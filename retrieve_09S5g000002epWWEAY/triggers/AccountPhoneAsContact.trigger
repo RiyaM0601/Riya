@@ -3,6 +3,7 @@ trigger AccountPhoneAsContact on Contact (before insert) {
     for(Contact ContactList:Trigger.new)
     {
         AccountId.add(ContactList.AccountId);
+		//Testing Revert Changes 1
     }
    List<Account> AccListUpdate = new List<Account>();
     if(AccountId.size()>0)
