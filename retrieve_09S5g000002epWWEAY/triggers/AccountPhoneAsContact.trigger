@@ -4,7 +4,6 @@ trigger AccountPhoneAsContact on Contact (before insert) {
     {
         AccountId.add(ContactList.AccountId);
 		//Testing Revert Changes 1
-		//Testing Revert Changes 2
     }
    List<Account> AccListUpdate = new List<Account>();
     if(AccountId.size()>0)
