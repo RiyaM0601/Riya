@@ -4,6 +4,9 @@ trigger AccountPhoneAsContact on Contact (before insert) {
     {
         AccountId.add(ContactList.AccountId);
 		//Testing 1
+		//Testing 2
+		//Testing 3
+		//Testing 4
     }
    List<Account> AccListUpdate = new List<Account>();
     if(AccountId.size()>0)
