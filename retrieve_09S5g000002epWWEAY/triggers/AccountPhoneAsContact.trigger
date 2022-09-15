@@ -15,7 +15,7 @@ trigger AccountPhoneAsContact on Contact (before insert) {
             if(Con.AccountId!=NULL && AccList.ContainsKey(Con.AccountId))
             {
              Con.Phone =  AccList.get(Con.AccountId).phone;
-
+ // testing 1
             }
            
         }
