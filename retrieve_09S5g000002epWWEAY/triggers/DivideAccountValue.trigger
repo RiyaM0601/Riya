@@ -6,7 +6,6 @@ trigger DivideAccountValue on Account (after insert,after update) {
            accId.add(acc.Id);  
            
   		  }
-	// Testing DEV2	  
    Map<Id,Account> AccList = new Map<Id,Account>([SELECT id,name,Total_Account__c, (SELECT Id,AccountId from Contacts)from Account where ID IN:AccId]);
    List<Contact> ConList = new List<Contact>([SELECT Id, AccountId,Department, Account_Value__c from Contact where AccountId IN: accId]);
    List <Contact> Con2 = New List<Contact>();
