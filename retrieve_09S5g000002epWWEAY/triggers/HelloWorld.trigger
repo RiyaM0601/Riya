@@ -6,5 +6,4 @@ trigger HelloWorld on Lead (before update) {
         }
 		// testing 1
 	//Testing 3
-		//Testing 2
 }
