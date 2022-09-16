@@ -6,7 +6,7 @@ trigger UpdateLead on Lead (before insert,before update) {
     {
         MapOfContacts.put(c.email,c);
     }
-    
+  // Test  
     for(lead ld:Trigger.new)
     {
      	if(ld.Email!=NULL && ld.Email!=trigger.oldMap.get(ld.id).email)
