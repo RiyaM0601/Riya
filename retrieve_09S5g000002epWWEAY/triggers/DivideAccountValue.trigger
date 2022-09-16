@@ -20,6 +20,6 @@ trigger DivideAccountValue on Account (after insert,after update) {
             System.debug('Total Value' +acc.Total_Account__c);
             Con2.add(c);
             }
-                    
+    // Test2                
     update Con2;
 }
