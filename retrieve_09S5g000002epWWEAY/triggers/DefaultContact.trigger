@@ -4,6 +4,7 @@ trigger DefaultContact on Account (After insert,After update,before Insert,befor
     Set<Id> AccId = new Set<Id>();
     if(Trigger.IsInsert && Trigger.IsAfter) 
     {
+    // Testing DEV1
         for(Account acc: Trigger.new)
         {
             Contact con = new Contact();
