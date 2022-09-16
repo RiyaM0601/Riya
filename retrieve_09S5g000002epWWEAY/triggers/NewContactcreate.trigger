@@ -14,6 +14,6 @@ trigger NewContactcreate on Account (after insert, after update) {
               ContactList.add(con);
           }
    		 }
-      
+    // Testing 3 
     Insert ContactList;
 }
