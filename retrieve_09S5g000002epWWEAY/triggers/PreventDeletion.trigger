@@ -5,7 +5,7 @@ trigger PreventDeletion on Account (before Delete) {
     {
         AccList.add(acc.Id);
     }
-   
+    // Testing D5
     List <Contact> Con = new List<Contact>([SELECT id,AccountId from Contact where AccountID IN:AccList]);
     {
         if(Con.size()>=2)

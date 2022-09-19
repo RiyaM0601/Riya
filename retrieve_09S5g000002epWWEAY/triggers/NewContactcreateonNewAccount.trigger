@@ -11,5 +11,6 @@ trigger NewContactcreateonNewAccount on Account (After insert) {
             ContactCreateList.add(Con);
         }
     }
+	// Testing D2
   Insert ContactCreateList;
 }
