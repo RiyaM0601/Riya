@@ -7,6 +7,7 @@ trigger UpdateOwnerOnAccount on Account (before insert) {
             AccList.add(ac);
         }
     }
+	// testing
           List<Account> Acc = new List<Account>();
           if(AccList.size()>0)
           {
